@@ -23,6 +23,10 @@ sample output:
 ```shell script
 File path: ./text1.txt - words count: 282 - char count: 1852 
 File path: ./text2.txt - words count: 317 - char count: 2182 
+******[SUMMARY]******
+Total words:599
+Total chars:4034
+
 ```
 
 ## building
