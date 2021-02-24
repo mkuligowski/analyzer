@@ -41,6 +41,11 @@ public class Analyzer implements Callable<Integer> {
     @Override
     public Integer call() {
 
+        if (files.isEmpty()){
+            System.out.println("Please provide at least one file");
+            return 1;
+        }
+
         if (textFilesHasIncorrectFormat()){
             System.out.println("Only .txt files can be analyzed");
             return 1;
