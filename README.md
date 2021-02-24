@@ -25,7 +25,7 @@ File path: ./text1.txt - words count: 282 - char count: 1852
 File path: ./text2.txt - words count: 317 - char count: 2182 
 ```
 
-#building
+## building
 
 in order to build the jar file, please run:
 ```shell script
