@@ -1,5 +1,8 @@
 package com.mkuligowski.analyzer;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class WordsAnalyzerRaport implements FileAnalyzerReport {
 
     private final String file;
@@ -13,5 +16,12 @@ public class WordsAnalyzerRaport implements FileAnalyzerReport {
     @Override
     public void printReport() {
         System.out.printf("File path: %s - words count: %d %n", file, words);
+    }
+
+    @Override
+    public Map<ReportEntry, Long> getReportMetaData() {
+        Map<ReportEntry, Long> map = new HashMap<>();
+        map.put(ReportEntry.WORD, words);
+        return map;
     }
 }

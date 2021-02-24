@@ -1,5 +1,8 @@
 package com.mkuligowski.analyzer;
 
+import java.util.Collections;
+import java.util.Map;
+
 public class ErrorReport implements FileAnalyzerReport {
 
     private String path;
@@ -20,5 +23,10 @@ public class ErrorReport implements FileAnalyzerReport {
             System.out.printf("file path: %s - error: %s %n", path, message );
         else
             System.out.printf("general error occurred: %s", message);
+    }
+
+    @Override
+    public Map<ReportEntry, Long> getReportMetaData() {
+        return Collections.emptyMap();
     }
 }
